@@ -1,0 +1,233 @@
+<!DOCTYPE html5>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.ui.all.css">
+<script src="jquery-1.10.2.js"></script>
+        <script src="src/formStyle/jquery.ui.datepicker.js" type="text/javascript"></script>
+        
+        <script src="jquery-1.10.2.js"></script>
+        <script src="src/formStyle/jquery.ui.widget.js" type="text/javascript"></script>
+        <script src="src/formStyle/jquery.ui.core.js" type="text/javascript"></script>
+	<script src="jquery.ui.widget.js"></script>
+	<script src="jquery.ui.datepicker.js"></script>
+	<link rel="stylesheet" href="demos.css">
+	<script>
+	$(function() {
+		$( ".datepicker" ).datepicker();
+	});
+	</script>
+<script src="jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+    
+    $("#flip2").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+    
+     $("#flip2").click(function(){
+        $("#panel1").slideToggle("slow");
+    });
+     $("#flip1").click(function(){
+        $("#panel1").slideToggle("slow");
+    });
+    
+    
+    
+   
+});
+
+</script>
+
+<style> 
+
+ input[type=text], select {
+    width: 100%;
+    padding: 12px 20px ;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form{
+background: none;
+}
+
+ span
+ {
+      color:#ffffff;
+ }
+td
+{
+     text-align:left;
+}
+#flip
+{
+     background-color:#4CB1CA;
+}
+#panel, #flip {
+    padding: 5px;
+   text-align: center;
+   
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    
+    background-image: url("../../images/22.jpg") ;
+    background-size:cover;
+    background-repeat:no-repeat;
+   
+    padding: 50px;
+    display: none;
+}
+#panel  table
+{
+         background: rgba(130,130,130,.3);
+         opacity:0.9;
+}
+
+#panel1  table
+{
+         background: rgba(130,130,130,.3);
+         opacity:0.9;
+}
+
+#flip1
+{
+     background-color:#4CB1CA;
+}
+
+#panel1, #flip1 {
+    padding: 5px;
+    text-align: center;
+    
+    border: solid 1px #c3c3c3;
+}
+
+
+#panel1{
+    padding: 50px;
+    display: none;
+  background-image: url("../../images/22.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;   
+}
+
+table label{
+color:white;
+}
+</style>
+</head>
+<body>
+<center><h2  style="color:Black;">Member Details</h2></center>
+ <form >
+<div id="flip"><span>Qualification Details</span></div>
+<div id="panel">
+    
+       <center><table>
+       <tr>
+               <td> </td>
+       </tr>
+       <tr>
+               <td> <label>Title :</label></td><td><input type="text" name="title" placeholder="Student/Employee"></td>
+       </tr>
+       <tr>
+               <td><label>Type :</label></td><td><select name="type">
+                   <option value=""></option>
+                      <option>Master's Degree</option>
+                      <option>Bachelor's Degree</option>
+                      <option>Diploma</option>
+                      <option>12th</option>
+                      <option>10th</option>
+             </select></td>
+       </tr>
+       <tr>
+               <td>  <label> Stream :</label></td><td><input type="text" name="Stream" placeholder="Stream:BSc/BE/MCA"></td>
+       </tr>
+       <tr>
+               <td><label>Year : </label></td>
+               <td><input type="text"  placeholder="Year of Passing out"></td>
+               
+       </tr>
+       <tr>
+                <td><label>College Name:</label></td>
+               <td> <input type="text" name="Clgname" placeholder="Harvard University"></td>
+       <tr>
+       <tr>
+               <td><label> Percentage :</label></td>
+               <td><input type="text" name="percentage" placeholder="33.33%"></td>
+       </tr>
+       <tr>
+                                  <td> <label> Date of Birth :</label></td>
+                                   <td><input type="text" class="datepicker"></td>
+                        </tr>
+                        
+                        <tr>
+                                  <td><label> Gender :</label></td>
+                                   <td><input type="radio" name="gender"><label>Male</label>
+                                            <input type="radio" name="gender"><label>Female</label>
+                                   </td>
+                        </tr>
+
+       <tr>
+               <td></td>
+               <td></td>
+       </tr>
+       </table></center>
+       <input type="reset"  style="float:right; width:150px; height:50px; background-color:#4CB1CA; color:white;" Value="Reset" >
+            <input type="button"  style="float:right; width:150px; height:50px; background-color:#4CB1CA; color:white;" Value="Save & Next" id="flip2">
+</div>
+<div id="flip1"><span>Professional Details</span></div>
+<div id="panel1">
+<center> <table>
+              <tr>
+                       <td> <label> Title :</label></td>
+                        <td><input type="text" name="title" placeholder="Associate System Engineer "></td>
+              </tr>
+              
+              <tr>
+                       <td> <label> Company Name : </label> </td>
+                        <td><input type="text" name="Cmpny name" placeholder="TCS / Infobeans"></td>
+              </tr>
+              
+              <tr>
+                       <td><label>Designation : </label>  </td>
+                        <td><input type="text" name="designation" placeholder="Team Lead/ Project Lead"></td>
+              </tr>
+              
+              <tr>
+                       <td><label>Package : </label> </td>
+                        <td><input type="text" name="package" placeholder="4 lacs/4,00,000"></td>
+              </tr>
+              
+              <tr>
+                       <td> <label> Join Date :</label></td>
+                        <td><input type="text" class="datepicker" name="joindate"></td>
+              </tr>
+              <tr>
+                       <td><label> End Date : </label></td>
+                        <td><input type="text" class="datepicker" name="enddate"></td>
+              </tr>
+              <tr>
+                       <td> <label>City : </label></td>
+                        <td><input type="text" name="city" placeholder="Indore/Mumbai"></td>
+              </tr>
+ </table></center>
+
+<input type="reset"  style="float:right; width:150px; height:50px; background-color:#4CB1CA; color:white;" Value="Reset" >  
+<input type="submit" value="submit" style="float:right; width:150px; height:50px; background-color:#4CB1CA; color:white;">
+       
+</div>
+
+
+
+</form>
+
+</body>
+</html>

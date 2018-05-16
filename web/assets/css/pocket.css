@@ -1,0 +1,36 @@
+.networkbox .nlogo,.networkbox .ntitle{
+    float:left;    
+}
+
+.ntitle{
+    margin-left: 50px
+}
+
+.nnav{
+    float:right;    
+    display:flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.nnav img
+{
+    width:50px;
+    height:50px;
+}
+
+.nnav .chat
+{
+    position: relative;   
+}
+        
+.nnav div .text
+{
+    color: blue;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+}
